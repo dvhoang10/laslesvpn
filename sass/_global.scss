@@ -26,10 +26,34 @@ body {
   border: none;
   outline: none;
   white-space: nowrap;
+  &--primary {
+    background-color: $primary-color;
+    color: white;
+    font-weight: 700;
+  }
   &--outline {
     background-color: transparent;
     color: $primary-color;
     font-weight: 500;
     border: 1px solid;
+  }
+  &--rounded {
+    border-radius: 10px;
+    padding: 17px 77px;
+  }
+  &--shadow {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 90%;
+      height: 100%;
+      transform: translate(-50%, 50%);
+      background: rgba(245, 56, 56, 0.35);
+      filter: blur(27px);
+      border-radius: inherit;
+    }
   }
 }
