@@ -1,6 +1,5 @@
 .plan {
-  padding: 80px 0 30px;
-  background: #f6f6f6;
+  padding: 80px 0 150px;
   &-header {
     max-width: 555px;
     text-align: center;
@@ -10,7 +9,6 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0 50px;
-    margin-bottom: 150px;
   }
   &-item {
     padding: 80px 68px 50px;

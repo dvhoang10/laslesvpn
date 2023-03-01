@@ -99,6 +99,10 @@ body {
   border-radius: inherit;
 }
 
+.bg-grayfb {
+  background: #fbfbfb;
+}
+
 .boxed {
   max-width: 555px;
   margin-left: auto;
@@ -268,8 +272,7 @@ h6 {
 }
 
 .plan {
-  padding: 80px 0 30px;
-  background: #f6f6f6;
+  padding: 80px 0 150px;
 }
 .plan-header {
   max-width: 555px;
@@ -280,7 +283,6 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0 50px;
-  margin-bottom: 150px;
 }
 .plan-item {
   padding: 80px 68px 50px;
@@ -339,6 +341,16 @@ h6 {
 }
 .network-image {
   margin-top: 155px;
+}
+
+.partner {
+  margin-bottom: 50px;
+}
+.partner-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 60px;
 }
 
 /*# sourceMappingURL=index.css.map */
