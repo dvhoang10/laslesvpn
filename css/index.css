@@ -178,7 +178,6 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0 40px;
 }
 .hero-content {
   width: 100%;
@@ -197,6 +196,34 @@ h6 {
   top: 50%;
   right: 0;
   transform: translate(40px, -50%);
+}
+
+.intro {
+  margin-bottom: 100px;
+}
+.intro-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 37px 0;
+  box-shadow: 0 42px 114px 0 rgba(13, 16, 37, 0.064);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-height: 200px;
+}
+.intro-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 36.5px;
+}
+.intro-title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.2;
+}
+.intro-text {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=index.css.map */
