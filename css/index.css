@@ -116,6 +116,13 @@ h6 {
   font-weight: 700;
 }
 
+.heading {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.4285714286;
+  margin-bottom: 20px;
+}
+
 .header {
   padding-top: 50px;
   padding-bottom: 100px;
@@ -224,6 +231,28 @@ h6 {
 .intro-text {
   font-size: 20px;
   line-height: 1.5;
+}
+
+.feature {
+  padding-bottom: 130px;
+}
+.feature-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 0 170px;
+}
+.feature-desc {
+  margin-bottom: 23px;
+}
+.feature-list {
+  list-style: none;
+}
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=index.css.map */
