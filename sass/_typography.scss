@@ -31,3 +31,8 @@ h6 {
   font-weight: 500;
   line-height: calc(30 / 18);
 }
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 30px;
+  }
+}

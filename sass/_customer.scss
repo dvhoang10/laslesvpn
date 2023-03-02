@@ -53,7 +53,7 @@
   }
   &-desc {
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -107,6 +107,26 @@
     .slick-active button {
       background-color: $primary-color;
       width: 45px;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .customer {
+    &-top {
+      flex-direction: column;
+      gap: 10px 0;
+    }
+    &-list {
+      padding-bottom: 50px;
+    }
+    &-desc {
+      font-size: 14px;
+    }
+    .slick-track {
+      padding-bottom: 20px;
+    }
+    .slick-dots {
+      justify-content: center;
     }
   }
 }

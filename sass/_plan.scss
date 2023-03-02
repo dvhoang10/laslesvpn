@@ -1,9 +1,7 @@
 .plan {
   padding: 80px 0 150px;
   &-header {
-    max-width: 555px;
-    text-align: center;
-    margin: 0 auto 60px;
+    margin-bottom: 60px;
   }
   &-list {
     display: grid;
@@ -56,6 +54,37 @@
     .button {
       background-color: $primary-color;
       color: white;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .plan {
+    padding: 50px 0;
+    &-list {
+      justify-content: flex-start;
+      grid-auto-columns: 310px;
+      grid-auto-flow: column;
+      grid-gap: 0 30px;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 1rem;
+      grid-template-columns: unset;
+    }
+    &-list::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
+    &-list > * {
+      scroll-snap-align: start;
+    }
+    &-item {
+      padding-left: 50px;
+      padding-right: 50px;
     }
   }
 }

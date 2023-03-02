@@ -7,6 +7,18 @@
     color: inherit;
     display: inline-block;
   }
+  &-toggle {
+    display: none;
+    i {
+      pointer-events: none;
+      font-size: 35px;
+      color: $heading-color;
+      display: block;
+    }
+  }
+  &-item--auth {
+    display: none;
+  }
 }
 
 @media (hover: hover) {
@@ -30,6 +42,43 @@
         left: 0;
         right: auto;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    width: 300px;
+    gap: 10px 0;
+    padding-top: 60px;
+    z-index: 99;
+    align-items: stretch;
+    transform: translateX(100%);
+    will-change: transform;
+    transition: all 0.2s linear;
+    &.is-show {
+      transform: translateX(0);
+    }
+    &-link {
+      display: block;
+      width: 100%;
+      padding: 20px;
+    }
+    &-toggle {
+      display: inline-block;
+    }
+    &-item--auth {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 20px;
     }
   }
 }
